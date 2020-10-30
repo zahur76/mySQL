@@ -28,3 +28,7 @@ select EmployeeId, LastName, Firstname, HireDate from Employee order by Hiredate
 select EmployeeId, LastName, Firstname, HireDate from Employee order by EmployeeId desc limit 3
 select min(Birthdate) from Employee;
 select count(*) from Customer where City= "Berlin";
+select Album.Title, count(*) from Track inner join Album on Album.AlbumId = Track.AlbumId group by Track.AlbumId;
+select City, count(*) from Customer group by City;
+select Track.Name, sum(InvoiceLine.UnitPrice * InvoiceLine.Quantity) from Track inner join InvoiceLine on InvoiceLine.TrackId = Track.TrackId where Track.name = "The Woman King";
+select City, count(*) from Customer group by City;
