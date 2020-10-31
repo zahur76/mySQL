@@ -32,3 +32,4 @@ select Album.Title, count(*) from Track inner join Album on Album.AlbumId = Trac
 select City, count(*) from Customer group by City;
 select Track.Name, sum(InvoiceLine.UnitPrice * InvoiceLine.Quantity) from Track inner join InvoiceLine on InvoiceLine.TrackId = Track.TrackId where Track.name = "The Woman King";
 select City, count(*) from Customer group by City;
+select City, count(*) from Customer group by City;
